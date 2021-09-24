@@ -36,6 +36,8 @@ namespace CleanArch.Mvc
                 options.UseSqlServer(
                     Configuration.GetConnectionString("UniversityDBConnection")));
 
+            CleanArch.Infra.IoC.DependencyContainer.RegisterService(services);
+
             services.AddDatabaseDeveloperPageExceptionFilter();
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
@@ -73,5 +75,7 @@ namespace CleanArch.Mvc
                 endpoints.MapRazorPages();
             });
         }
+
+     
     }
 }

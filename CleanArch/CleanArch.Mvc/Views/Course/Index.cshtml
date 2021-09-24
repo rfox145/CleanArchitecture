@@ -1,0 +1,21 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model CleanArch.Application.ViewModels.CourseViewModel
+
+
+
+<div class="container body-content">
+    <div class="row course-content">
+        @foreach (var item in Model.Courses)
+	{
+            <div class="card mr-2">
+
+		         <div class="course-image-container">
+                     <div class="course-image" style="background-image:url(@item.ImageUrl)"></div>
+                 </div>
+                 <span>@item.Name</span>
+            </div>
+	}
+    </div>
+</div>

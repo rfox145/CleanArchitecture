@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Domain", "CleanAr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Infra.Data", "CleanArch.Infra.Data\CleanArch.Infra.Data.csproj", "{025FA0A3-B1B9-4CB6-9F17-31A6C781B923}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Application", "CleanArch.Application\CleanArch.Application.csproj", "{85BEC8A2-0C10-4AD4-9F74-A2DB73A1F7D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Application", "CleanArch.Application\CleanArch.Application.csproj", "{85BEC8A2-0C10-4AD4-9F74-A2DB73A1F7D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Infra.IoC", "CleanArch.IoC\CleanArch.Infra.IoC.csproj", "{833E85AA-F236-4CDF-8DDD-2203BA6BD9C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{85BEC8A2-0C10-4AD4-9F74-A2DB73A1F7D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85BEC8A2-0C10-4AD4-9F74-A2DB73A1F7D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85BEC8A2-0C10-4AD4-9F74-A2DB73A1F7D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{833E85AA-F236-4CDF-8DDD-2203BA6BD9C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{833E85AA-F236-4CDF-8DDD-2203BA6BD9C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{833E85AA-F236-4CDF-8DDD-2203BA6BD9C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{833E85AA-F236-4CDF-8DDD-2203BA6BD9C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +58,7 @@ Global
 		{654C3A5F-E624-41D5-A73E-DCC71ECC4E4F} = {DFBB1172-1232-4B16-8C8C-DCDCDC36AF88}
 		{025FA0A3-B1B9-4CB6-9F17-31A6C781B923} = {AEA7E7E1-6FDD-4BCA-B955-A98B14FCACEE}
 		{85BEC8A2-0C10-4AD4-9F74-A2DB73A1F7D1} = {D500BD5E-9712-49FE-A2DC-6D0E64A0FDF3}
+		{833E85AA-F236-4CDF-8DDD-2203BA6BD9C6} = {98BB1D6C-4789-4AEE-9942-4E5446E07B3D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {062DF0A3-E4DD-4297-86FA-19B4DE437548}
