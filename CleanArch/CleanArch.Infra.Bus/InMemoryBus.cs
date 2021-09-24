@@ -1,4 +1,6 @@
-﻿using MediatR;
+﻿using CleanArch.Domain.Core.Commands;
+using CleanArch.Domain.Interfaces;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace CleanArch.Infra.Bus
 {
-   public sealed class InMemoryBus : IMediator
+   public sealed class InMemoryBus : IMediatorHandler
     {
         private readonly IMediator mediator;
 
@@ -17,24 +19,10 @@ namespace CleanArch.Infra.Bus
             this.mediator = mediator;
         }
 
-        public Task Publish(object notification, CancellationToken cancellationToken = default)
+        public Task SendCommand<T>(T Command) where T: Command
         {
-            throw new NotImplementedException();
+            return mediator.Send(Command);
         }
-
-        public Task Publish<TNotification>(TNotification notification, CancellationToken cancellationToken = default) where TNotification : INotification
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<TResponse> Send<TResponse>(IRequest<TResponse> request, CancellationToken cancellationToken = default)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<object> Send(object request, CancellationToken cancellationToken = default)
-        {
-            throw new NotImplementedException();
-        }
+      
     }
 }
